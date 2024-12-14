@@ -1,6 +1,7 @@
 .task {
   background: var(--color-two);
   color: var(--color-one);
+  color: "white";
   padding: 1rem;
   border-radius: 10px;
   width: 100%;

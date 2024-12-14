@@ -1,7 +1,18 @@
-{{page-title "ToDo"}}
+<div>
+  <header>
+    <h1>todo</h1>
+    <div>
+      <LinkTo @route="index">
+        Lista de Tarefas
+      </LinkTo>
 
-{{outlet}}
+      <LinkTo @route="/create">
+        Adicionar Tarefa
+      </LinkTo>
+    </div>
+  </header>
 
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
+  <main>
+    {{outlet}}
+  </main>
+</div>

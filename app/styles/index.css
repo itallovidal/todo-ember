@@ -1,0 +1,25 @@
+header{
+  height: 20vh;
+  background: var(--color-two);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+header h1{
+  font-size: 3rem;
+  color: var(--color-one);
+  margin: 0;
+}
+
+header div{
+  position: absolute;
+  bottom: -15%;
+  display: flex;
+  gap: 1rem;
+}
+
+#task-listing{
+  display: flex;
+  gap: 1rem;
+}

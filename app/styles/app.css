@@ -1,1 +1,48 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import './index.css';
+
+:root{
+  --color-one: #F1F6F9;
+  --color-two: #0f161c;
+  --color-three: #020909;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a{
+  border: none;
+  padding: 1.2rem;
+  color: var(--color-one);
+  background: var(--color-two);
+  border-radius: 8px;
+  transition: 300ms;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+
+a.active   {
+  color: var(--color-two);
+  background: var(--color-one);
+}
+
+body{
+  background: var(--color-three);
+}
+
+main{
+  margin: 4.5rem auto;
+  max-width: 56.25rem;
+  width: 90%;
+}
