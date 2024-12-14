@@ -1,0 +1,27 @@
+.task {
+  background: var(--color-two);
+  color: var(--color-one);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: calc(18.75rem - 3rem);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.task span{
+  padding: .4rem;
+  background: var(--color-one);
+  color: var(--color-two);
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.task button.delete{
+  position: absolute;
+  top: -10%;
+  right: -10%;
+}
+
