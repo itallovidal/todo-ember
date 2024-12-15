@@ -5,5 +5,5 @@ interface IButton{
   variant: 'light' | 'dark' | 'unstyled';
 }
 
-export class Index extends Component<IButton>{
+export default class Index extends Component<IButton>{
 }

@@ -1,0 +1,30 @@
+@value color-one, color-two from '../../styles/colors.css';
+
+button{
+  border: none;
+  padding: 1.2rem;
+  border-radius: 8px;
+  transition: 300ms;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button.light{
+  color:color-two;
+  background:color-one;
+}
+
+button.dark{
+  color:color-two;
+  background: color-one;
+}
+
+button.unstyled{
+  padding: initial;
+  border-radius: initial;
+  background: none;
+}
+
+

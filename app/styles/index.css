@@ -1,6 +1,8 @@
+@value color-one, color-two, color-three from './colors.css';
+
 header{
   height: 20vh;
-  background: var(--color-two);
+  background: color-two;
   display: grid;
   place-items: center;
   position: relative;
@@ -8,7 +10,7 @@ header{
 
 header h1{
   font-size: 3rem;
-  color: var(--color-one);
+  color: color-one;
   margin: 0;
 }
 
@@ -19,7 +21,4 @@ header div{
   gap: 1rem;
 }
 
-#task-listing{
-  display: flex;
-  gap: 1rem;
-}
+

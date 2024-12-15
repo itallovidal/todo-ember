@@ -1,11 +1,12 @@
+@value color-one, color-two from '../../styles/colors.css';
+
 .task {
-  background: var(--color-two);
-  color: var(--color-one);
-  color: "white";
+  background:color-two;
+  color: #F1F6F9;
   padding: 1rem;
   border-radius: 10px;
   width: 100%;
-  max-width: calc(18.75rem - 3rem);
+  max-width: calc(18.75rem - 2rem);
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -14,15 +15,17 @@
 
 .task span{
   padding: .4rem;
-  background: var(--color-one);
-  color: var(--color-two);
+  background:color-one;
+  color:color-two;
   border-radius: 10px;
   width: fit-content;
 }
 
 .task button.delete{
   position: absolute;
-  top: -10%;
-  right: -10%;
+  top: 2%;
+  right: 2%;
+  color: red;
+  padding: .8rem;
 }
 

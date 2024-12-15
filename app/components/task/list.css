@@ -1,0 +1,5 @@
+div.task-listing{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

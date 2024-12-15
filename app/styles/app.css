@@ -1,10 +1,5 @@
 @import './index.css';
-
-:root{
-  --color-one: #F1F6F9;
-  --color-two: #0f161c;
-  --color-three: #020909;
-}
+@value color-one, color-two, color-three from './colors.css';
 
 *{
   box-sizing: border-box;
@@ -18,11 +13,21 @@ a{
   cursor: pointer;
 }
 
+*, a{
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button, h1, h2, h3  {
+  font-weight: 500;
+}
+
 a{
   border: none;
   padding: 1.2rem;
-  color: var(--color-one);
-  background: var(--color-two);
+  color: color-one;
+  background: color-two;
   border-radius: 8px;
   transition: 300ms;
 }
@@ -32,13 +37,13 @@ a:hover{
 }
 
 
-a.active   {
-  color: var(--color-two);
-  background: var(--color-one);
+:global(a.active){
+  color: color-two;
+  background:color-one;
 }
 
 body{
-  background: var(--color-three);
+  background: color-three;
 }
 
 main{

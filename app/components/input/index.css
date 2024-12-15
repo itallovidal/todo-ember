@@ -1,0 +1,17 @@
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.input-wrapper input, .input-wrapper  textarea{
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.input-wrapper textarea{
+  height: 15ch;
+}

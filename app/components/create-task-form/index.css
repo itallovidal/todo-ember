@@ -1,0 +1,20 @@
+@value color-two, color-one from '../../styles/colors.css';
+
+.create-task-form{
+  background: color-two;
+  padding: 1rem;
+  color: color-one;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.create-task-form .footer{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.create-task-form .footer > *{
+  flex-grow: 1;
+}
