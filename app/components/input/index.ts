@@ -1,9 +1,8 @@
 import Component from "@glimmer/component";
 
-interface IInput  {
+interface IInputWrapper  {
   labelName: string;
-  isMultiline?: boolean;
 }
 
-export default class Index extends Component<IInput>{
+export default class Index extends Component<IInputWrapper>{
 }

@@ -1,0 +1,10 @@
+.input, .textarea{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+  }
+  
+.textarea{
+    height: 15ch;
+  }

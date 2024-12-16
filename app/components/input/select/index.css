@@ -1,0 +1,11 @@
+.select{
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.select option{
+    background-color: white;
+    cursor: pointer;
+}

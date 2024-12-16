@@ -95,5 +95,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
   }
 }

@@ -1,8 +1,4 @@
 <div local-class="input-wrapper">
   <label for="{{@labelName}}">{{@labelName}}</label>
-  {{#if @isMultiline}}
-    <textarea ...attributes/>
-  {{else}}
-    <input ...attributes/>
-  {{/if}}
+  {{yield}}
 </div>

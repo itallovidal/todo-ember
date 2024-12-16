@@ -3,15 +3,7 @@
   flex-direction: column;
   gap: 1rem;
   margin-block: 1rem;
+  flex-grow: 1;
 }
 
-.input-wrapper input, .input-wrapper  textarea{
-  padding: 1rem;
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-}
 
-.input-wrapper textarea{
-  height: 15ch;
-}
