@@ -21,4 +21,16 @@ header div{
   gap: 1rem;
 }
 
+.list-empty{
+  display: grid;
+  place-items: center;
+  color: white;
+  gap: 1rem;
+}
+
+
+.list-empty p{
+  opacity: .60;
+}
+
 

@@ -1,15 +1,14 @@
-<div local-class="task">
+<div local-class="task" data-completed="{{if this.task.isCompleted 'true' 'false'}}">
+  <h3>{{this.task.task}}</h3>
+  <p>{{this.task.description}} </p>
 
-  <h3>Nome da Tarefa</h3>
-  <p>kajwbd djkawh dkljawdh lkawdh akjwdhakwdaw dhawd hakjwdhawk djawdhkjaw </p>
 
   <div class="date-info">
-    <p>Data limite: 20/02</p>
-    <p>Criado em: 20/02</p>
+    <p>Data limite: {{this.task.limitDate}}</p>
   </div>
 
-  <span>categoria</span>
+  <span>{{this.task.category}}</span>
 
-  <Button @variant="light" local-class="delete">X</Button>
-  <Button @variant="light" >Marcar como concluída</Button>
+  <Button {{on "click" (fn this.deleteTask this.task.taskId)}} @variant="light" local-class="delete">X</Button>
+  <Button {{on "click" (fn this.changeTaskStatus this.task.taskId)}} @variant="light" >Marcar como concluída</Button>
 </div>

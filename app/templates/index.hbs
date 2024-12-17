@@ -1,1 +1,9 @@
-<Task::List/>
+{{#if @model.length }}
+<Task::List @list={{this.list}} @deleteTask={{this.deleteTask}} @changeTaskStatus={{this.changeTaskStatus}}/>
+{{else}}
+  <div local-class="list-empty">
+    <h2>Por enquanto, sem tarefas!</h2>
+    <p>Crie um afazer na página de criação</p>
+  </div>
+{{/if}}
+

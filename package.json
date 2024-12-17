@@ -97,6 +97,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "uuid": "^11.0.3",
     "zod": "^3.24.1"
   }
 }

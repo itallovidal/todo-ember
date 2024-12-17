@@ -11,6 +11,7 @@
   gap: 1rem;
   flex-direction: column;
   position: relative;
+  transition: 400ms;
 }
 
 .task span{
@@ -27,5 +28,14 @@
   right: 2%;
   color: red;
   padding: .8rem;
+}
+
+.task[data-completed="true"] {
+  opacity: 0.4;
+}
+
+
+.task[data-completed="false"] {
+  opacity: 1;
 }
 

@@ -1,6 +1,5 @@
 <div local-class="task-listing">
-  <Task/>
-  <Task/>
-  <Task/>
-  <Task/>
+  {{#each @list as |task|}}
+    <Task @task={{task}} @deleteTask={{this.deleteTask}} @changeTaskStatus={{this.changeTaskStatus}} />
+  {{/each}}
 </div>
